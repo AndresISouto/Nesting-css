@@ -7,5 +7,3 @@ El nestig es una reciente actualización de css que permite la definición de es
 El atributo @scope se usa de forma similar al nesting si solo tiene una raíz pero permite un mayor control al poder declarar el punto en el que deja de aplicarse.
 
 El text-wrap ayuda a mantener una mejor presentacion tanto en titulos como en bloques de texto al ajustar el contenido.
-
-- cambiar la presentacion
