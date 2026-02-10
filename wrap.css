@@ -1,0 +1,9 @@
+/* Esto hace que los textos tengan +/- el mismo ancho en cada linea */
+.title {
+  text-wrap: balance;
+}
+
+/* Esto es para no dejar palabras huerfanas */
+.pretty {
+  text-wrap: pretty;
+}

@@ -1,0 +1,41 @@
+/* Forma tradicional de hacer el nesting */
+.card {
+  background: white;
+  padding: 20px;
+}
+
+.card .title {
+  font-size: 1.5rem;
+}
+
+/* Forma moderna */
+.card {
+  background: white;
+  padding: 20px;
+
+  .title {
+    font-size: 1.5rem;
+    color: green;
+  }
+}
+
+/* & para añadir pseudoelementos al elemento padre */
+.button {
+  background: lightblue;
+
+  &:hover {
+    background: darkblue; /* El & se convierte en .button */
+  }
+
+  &::before {
+    content: "→";
+  }
+}
+/* Esto es para cuando tenga ambas clases */
+.alert {
+  border: 1px solid gray;
+
+  &.is-danger {
+    border-color: red; /* Equivale a .alert.is-danger */
+  }
+}

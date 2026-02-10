@@ -1,0 +1,20 @@
+/*
+ * Usamos @scope para prevenir lo que llamamos deep nesting 
+ * Esto es, para evitar selectores del tipo .card .container .title . img etc...
+ *
+ * Para arreglar esto usamos el @scope de la siguiente manera
+ * */
+
+/* aqui solo las imagenes, enlaces y titulos dentro de un contenedor con .card */
+@scope (.card) {
+  a {
+    color: black;
+  }
+}
+
+/* aqui las imagenes dentro de .card pero no dentro de .card-content */
+@scope (.card) to (.card-content) {
+  p {
+    color: green;
+  }
+}
