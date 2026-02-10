@@ -7,3 +7,6 @@
 .pretty {
   text-wrap: pretty;
 }
+.stable {
+  text-wrap: stable;
+}
